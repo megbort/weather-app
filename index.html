@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Megan's Weather App</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="app-wrap">
+    <div class="flex">
+      <header>
+        <h1>Megan's Weather App</h1>
+        <div class="container">
+          <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city...">
+          <a class="btn" href="#">Go!</a>
+        </div>
+        <p class="error"></p>
+      </header>
+      <main>
+        <div class="results">
+          <div class="location">
+            <div class="city"></div>
+            <div class="date"></div>
+          </div>
+          <div class="current">
+            <div class="temp"><span></span></div>
+            <div class="icon"></div>
+            <div class="weather"></div>
+            <div class="hi-low"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

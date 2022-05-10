@@ -1,0 +1,144 @@
+body {
+  font-family: 'M PLUS Rounded 1c', Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(180deg, rgba(0,0,0,.30) 0%, rgba(255,255,255,0) 45%), url('../images/bg-couds.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.3;
+  background-color: rgba(212, 212, 212, 0.15);
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 500px) {
+.app-wrap {
+  border-radius: 40px;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 15px 30px;
+}
+
+header h1 {
+  color: #FFF;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+header p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+  color: rgb(175 0 0);
+}
+
+header .container {
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  padding: 5px;
+}
+
+header input {
+  flex-grow: 2;
+  border: none;
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(211, 211, 211, 0.6);
+  border-radius: 40px 0px 0px 40px;
+  color: #313131;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.2s ease-out;
+  font-family: 'M PLUS Rounded 1c', Arial, Helvetica, sans-serif;
+}
+
+header input:focus {
+  outline: none;
+  background-color: #ebebeb;
+}
+
+a, a:active, a:focus{
+  outline: none;
+}
+
+header a {
+  outline: none;
+  border:1px solid #578ca5;
+  background: #578ca5;
+  font-weight: 500;
+  color:white;
+  border-radius: 0px 40px 40px 0px;
+  padding: 10.5px 15px;
+  text-decoration: none;
+  font-family: 'M PLUS Rounded 1c', Arial, Helvetica, sans-serif;
+}
+
+header a:active {
+  background: #263b46;
+  border-color: #263b46;
+}
+
+@media (min-width: 500px) {
+  header a:hover {
+    background: #263b46;
+    border-color: #263b46;
+  }
+}
+
+.results {
+  padding: 10px 15px 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.location .city {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.current .temp {
+  color: #FFF;
+  font-size: 110px;
+  font-weight: 900;
+  text-shadow: 3px 8px rgba(0, 0, 0, 0.6);
+  margin-top: 22px;
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.current .hi-low {
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 500;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.6);
+}
