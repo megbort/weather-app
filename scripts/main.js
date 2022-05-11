@@ -1,5 +1,5 @@
 const api = {
-  key: "805fa91ae8a3301b68cc5c23e2bd2804",
+  key: "628c4d9ba0db923e525ed8d3ee7c55fa",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
@@ -39,8 +39,7 @@ function getResults (query) {
 
 // various statements to display results on screen
 function displayResults (weather) {
-  // console log for testing
-  // console.log(weather);
+
   let city = document.querySelector('.location .city');
   city.innerText = `${weather.name}, ${weather.sys.country}`;
 
